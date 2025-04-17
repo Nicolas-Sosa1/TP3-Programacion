@@ -31,6 +31,13 @@
             <br />
             Repetir contraseña:&nbsp;&nbsp;
             <asp:TextBox style="margin-left:13px" ID="txtContrasenia2" runat="server" TextMode="Password"></asp:TextBox>
+            <br />
+            <br />
+            Correo electrónico:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtCorreo" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            CP:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtCodigo" runat="server"></asp:TextBox>
         </div>
     </form>
 </body>
