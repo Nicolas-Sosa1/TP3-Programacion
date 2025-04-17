@@ -13,6 +13,15 @@
             <h3 style="margin-left:160px">Localidades</h3>         
             Nombre de Localidad:&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtLocalidad" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Button style="margin-left:160px" ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" />
+            <br />
+            <br />
+            <br />
+            <h3 style="margin-left:165px">Usuario</h3>
+            Nombre de Usuario:&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
         </div>
     </form>
 </body>
