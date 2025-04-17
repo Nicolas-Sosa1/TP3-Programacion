@@ -18,10 +18,19 @@
             <asp:Button style="margin-left:160px" ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" />
             <br />
             <br />
+            <asp:Label ID="lblExito" runat="server"></asp:Label>
             <br />
             <h3 style="margin-left:165px">Usuario</h3>
             Nombre de Usuario:&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            Contraseña:&nbsp;
+            <asp:TextBox style="margin-left:65px" ID="txtContrasenia1" runat="server" TextMode="Password"></asp:TextBox>
+            <br />
+            <br />
+            Repetir contraseña:&nbsp;&nbsp;
+            <asp:TextBox style="margin-left:13px" ID="txtContrasenia2" runat="server" TextMode="Password"></asp:TextBox>
         </div>
     </form>
 </body>
