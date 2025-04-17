@@ -10,6 +10,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h3 style="margin-left:160px">Localidades</h3>         
+            Nombre de Localidad:&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtLocalidad" runat="server"></asp:TextBox>
         </div>
     </form>
 </body>
