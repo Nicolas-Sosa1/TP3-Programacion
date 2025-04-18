@@ -43,5 +43,24 @@ namespace TP3_Grupo18_Programacion
             txtLocalidad.Text = "";
 
         }
+
+        //funcion reutilizable para setear la longitud maxima de distintos campos.
+        protected bool esLongitudValida(string texto, int maximo)
+        {
+            if (texto.Length > maximo) { return false; }
+            else { return true; }
+        }
+        //custom validator para setear el limite de caracteres
+        //en 20 a la contraseña.
+        protected void customCont1_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            args.IsValid = esLongitudValida(args.Value.Trim(), 20);
+        }
+        //custom validator para setear el limite de caracteres
+        //en 20 en repetir contraseña.
+        protected void customCont2_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            args.IsValid = esLongitudValida(args.Value.Trim(), 20);
+        }
     }
 }

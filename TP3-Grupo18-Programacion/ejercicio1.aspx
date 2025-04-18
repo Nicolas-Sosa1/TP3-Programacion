@@ -30,11 +30,16 @@
             <br />
             <br />
             Contraseña:&nbsp;
-            <asp:TextBox style="margin-left:65px" ID="txtContrasenia1" runat="server" TextMode="Password"></asp:TextBox>
+            <asp:TextBox style="margin-left:65px" ID="txtContrasenia1" runat="server" TextMode="Password" ValidationGroup="grupoUsuario"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvCont1" runat="server" ControlToValidate="txtContrasenia1" ErrorMessage="Ingrese contraseña" ValidationGroup="grupoUsuario">*</asp:RequiredFieldValidator>
+            <asp:CompareValidator ID="compareCont" runat="server" ControlToCompare="txtContrasenia2" ControlToValidate="txtContrasenia1" ErrorMessage="Las contraseñas no coinciden" ValidationGroup="grupoUsuario">*</asp:CompareValidator>
+            <asp:CustomValidator ID="customCont1" runat="server" ControlToValidate="txtContrasenia1" ErrorMessage="Limite de caracteres: 20" OnServerValidate="customCont1_ServerValidate" ValidationGroup="grupoUsuario">*</asp:CustomValidator>
             <br />
             <br />
             Repetir contraseña:&nbsp;&nbsp;
-            <asp:TextBox style="margin-left:13px" ID="txtContrasenia2" runat="server" TextMode="Password"></asp:TextBox>
+            <asp:TextBox style="margin-left:13px" ID="txtContrasenia2" runat="server" TextMode="Password" ValidationGroup="grupoUsuario"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvCont2" runat="server" ControlToValidate="txtContrasenia2" ErrorMessage="Repita contraseña" ValidationGroup="grupoUsuario">*</asp:RequiredFieldValidator>
+            <asp:CustomValidator ID="customCont2" runat="server" ControlToValidate="txtContrasenia2" ErrorMessage="Limite de caracteres: 20" OnServerValidate="customCont2_ServerValidate" ValidationGroup="grupoUsuario">*</asp:CustomValidator>
             <br />
             <br />
             Correo electrónico:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -50,7 +55,10 @@
             <br />
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" />
+            <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="grupoUsuario" />
+            <br />
+            <br />
+            <asp:ValidationSummary ID="vsUsuario" runat="server" ValidationGroup="grupoUsuario" />
         </div>
     </form>
 </body>

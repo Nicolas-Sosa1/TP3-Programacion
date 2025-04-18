@@ -87,6 +87,33 @@ namespace TP3_Grupo18_Programacion
         protected global::System.Web.UI.WebControls.TextBox txtContrasenia1;
 
         /// <summary>
+        /// Control rfvCont1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCont1;
+
+        /// <summary>
+        /// Control compareCont.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator compareCont;
+
+        /// <summary>
+        /// Control customCont1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator customCont1;
+
+        /// <summary>
         /// Control txtContrasenia2.
         /// </summary>
         /// <remarks>
@@ -94,6 +121,24 @@ namespace TP3_Grupo18_Programacion
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtContrasenia2;
+
+        /// <summary>
+        /// Control rfvCont2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCont2;
+
+        /// <summary>
+        /// Control customCont2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator customCont2;
 
         /// <summary>
         /// Control txtCorreo.
@@ -130,5 +175,14 @@ namespace TP3_Grupo18_Programacion
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnGuardarUsuario;
+
+        /// <summary>
+        /// Control vsUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary vsUsuario;
     }
 }
