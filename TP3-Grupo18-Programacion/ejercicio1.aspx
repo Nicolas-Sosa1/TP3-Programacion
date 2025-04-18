@@ -12,13 +12,17 @@
         <div>
             <h3 style="margin-left:160px">Localidades</h3>         
             Nombre de Localidad:&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtLocalidad" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtLocalidad" runat="server" ValidationGroup="1"></asp:TextBox>
+            &nbsp;<asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="txtLocalidad" ErrorMessage="Debe ingresar una localidad" ValidationGroup="1">*</asp:RequiredFieldValidator>
             <br />
             <br />
-            <asp:Button style="margin-left:160px" ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" />
+            <asp:Button style="margin-left:160px" ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" OnClick="btnGuardarLocalidad_Click" ValidationGroup="1" />
             <br />
             <br />
             <asp:Label ID="lblExito" runat="server"></asp:Label>
+            <br />
+            <br />
+            <asp:ValidationSummary ID="vsLocalidad" runat="server" ValidationGroup="1" />
             <br />
             <h3 style="margin-left:165px">Usuario</h3>
             Nombre de Usuario:&nbsp;&nbsp;&nbsp;&nbsp;
