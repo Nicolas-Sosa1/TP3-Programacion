@@ -27,6 +27,7 @@
             <h3 style="margin-left:165px">Usuario</h3>
             Nombre de Usuario:&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvUsuario" runat="server" ControlToValidate="txtUsuario" ErrorMessage="Ingrese un nombre de usuario" ValidationGroup="grupoUsuario">*</asp:RequiredFieldValidator>
             <br />
             <br />
             Contraseña:&nbsp;
@@ -44,6 +45,8 @@
             <br />
             Correo electrónico:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtCorreo" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="rfvCorreo" runat="server" ControlToValidate="txtCorreo" ErrorMessage="Ingrese un correo electrónico" ValidationGroup="grupoUsuario">*</asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="revCorreo" runat="server" ControlToValidate="txtCorreo" ErrorMessage="Ingrese un correo electrónico valido" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="grupoUsuario">*</asp:RegularExpressionValidator>  
             <br />
             <br />
             CP:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="txtCodigo" runat="server"></asp:TextBox>
