@@ -59,9 +59,13 @@
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="grupoUsuario" />
+            <asp:Label ID="lblBienvenido" runat="server" Text="Bienvenido x" style="margin-left:100px"></asp:Label>
             <br />
             <br />
             <asp:ValidationSummary ID="vsUsuario" runat="server" ValidationGroup="grupoUsuario" />
+            <p>
+            <asp:Button ID="btnInicio" runat="server" Text=" Ir a inicio.aspx" Width="136px" OnClick="btnIrInicio_Click" />
+            </p>
         </div>
     </form>
 </body>
