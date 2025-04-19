@@ -62,5 +62,14 @@ namespace TP3_Grupo18_Programacion
         {
             args.IsValid = esLongitudValida(args.Value.Trim(), 20);
         }
+
+        protected void btnIrInicio_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("inicio.aspx");
+        }
+
+        protected void btnGuardarUsuario_Click(object sender, EventArgs e)
+        {
+        }
     }
 }
