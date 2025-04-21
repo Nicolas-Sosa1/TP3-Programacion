@@ -60,8 +60,8 @@
             <br />
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="grupoUsuario" />
-            <asp:Label ID="lblBienvenido" runat="server" Text="Bienvenido x" style="margin-left:100px"></asp:Label>
+            <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="grupoUsuario" OnClick="btnGuardarUsuario_Click" />
+            <asp:Label ID="lblBienvenido" runat="server" style="margin-left:100px"></asp:Label>
             <br />
             <br />
             <asp:ValidationSummary ID="vsUsuario" runat="server" ValidationGroup="grupoUsuario" />

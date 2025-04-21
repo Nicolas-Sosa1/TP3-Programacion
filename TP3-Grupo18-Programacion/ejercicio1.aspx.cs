@@ -67,5 +67,16 @@ namespace TP3_Grupo18_Programacion
         {
             Response.Redirect("inicio.aspx");
         }
+
+        protected void btnGuardarUsuario_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)  // Esto verifica que todos los Validadores estén OK
+            {
+                
+                lblBienvenido.Text = "Bienvenido " + txtUsuario.Text;
+                
+            }
+            
+        }
     }
 }
