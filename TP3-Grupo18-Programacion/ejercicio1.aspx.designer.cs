@@ -213,6 +213,15 @@ namespace TP3_Grupo18_Programacion
         protected global::System.Web.UI.WebControls.DropDownList ddlLocalidades;
 
         /// <summary>
+        /// Control rfvDdlLocalidades.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDdlLocalidades;
+
+        /// <summary>
         /// Control btnGuardarUsuario.
         /// </summary>
         /// <remarks>

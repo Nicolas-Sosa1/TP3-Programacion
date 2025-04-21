@@ -12,6 +12,11 @@ namespace TP3_Grupo18_Programacion
         protected void Page_Load(object sender, EventArgs e)
         {
             UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+
+            if (IsPostBack == false)
+            {
+                ddlLocalidades.Items.Add(new ListItem("--Seleccione una localidad--", "--Seleccione una localidad--"));
+            }
         }
 
         protected void btnGuardarLocalidad_Click(object sender, EventArgs e)
@@ -74,7 +79,13 @@ namespace TP3_Grupo18_Programacion
             {
                 
                 lblBienvenido.Text = "Bienvenido " + txtUsuario.Text;
-                
+
+                txtCodigo.Text = "";
+                txtCorreo.Text = "";
+                txtUsuario.Text = "";
+                ddlLocalidades.SelectedIndex = 0;
+
+
             }
             
         }
